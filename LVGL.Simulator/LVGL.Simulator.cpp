@@ -55,7 +55,7 @@ bool single_display_mode_initialization()
 HANDLE g_window_mutex = NULL;
 bool g_initialization_status = false;
 
-#define LVGL_SIMULATOR_MAXIMUM_DISPLAYS 16
+#define LVGL_SIMULATOR_MAXIMUM_DISPLAYS 100
 HWND g_display_window_handles[LVGL_SIMULATOR_MAXIMUM_DISPLAYS];
 
 unsigned int __stdcall lv_win32_window_thread_entrypoint(
@@ -164,19 +164,20 @@ bool multiple_display_mode_initialization()
 int main()
 {
     lv_init();
-
+    /*
     if (!single_display_mode_initialization())
     {
         return -1;
     }
-
-    /*if (!multiple_display_mode_initialization())
+    //*/
+    //*
+    if (!multiple_display_mode_initialization())
     {
         return -1;
     }
     else
     {
-        for (size_t i = 0; i < LVGL_SIMULATOR_MAXIMUM_DISPLAYS; ++i)
+        for (size_t i = 90; i < LVGL_SIMULATOR_MAXIMUM_DISPLAYS; ++i)
         {
             lv_win32_window_context_t* context = (lv_win32_window_context_t*)(
                 lv_win32_get_window_context(g_display_window_handles[i]));
@@ -185,6 +186,7 @@ int main()
                 lv_disp_set_default(context->display_device_object);
                 switch (i)
                 {
+                    /*
                 case 0:
                     lv_demo_widgets();
                     break;
@@ -233,12 +235,100 @@ int main()
                 case 15:
                     lv_example_style_7();
                     break;
+                */
+ /*               case 16:
+                    lv_example_style_7();
+                    break;
+                case 17:
+                    lv_demo_widgets();
+                    break;
+                case 18:
+                    lv_demo_benchmark();
+                    break;
+                case 19:
+                    lv_example_style_1();
+                    break;
+                case 20:
+                    lv_example_get_started_1();
+                    break;
+                case 21:
+                    lv_example_anim_1();
+                    break;
+                case 22:
+                    lv_example_style_2();
+                    break;
+                case 23:
+                    lv_example_get_started_2();
+                    break;
+                case 24:
+                    lv_example_anim_2();
+                    break;
+                case 25:
+                    lv_example_style_3();
+                    break;
+                case 26:
+                    lv_example_get_started_3();
+                    break;
+                case 27:
+                    lv_example_anim_3();
+                    break;
+                case 28:
+                    lv_example_style_4();
+                    break;
+                case 29:
+                    lv_example_style_5();
+                    break;
+                case 30:
+                    lv_example_style_6();
+                    break;
+                case 31:
+                    lv_example_imgfont_1();
+                    break;
+                case 32:
+                    lv_example_style_7();
+                    break;
+*/
+                case 90:
+                    lv_example_style_1();
+                    break;
+                case 91:
+                    lv_example_menu_5();
+                    break;
+                case 92:
+                    lv_demo_widgets();
+                    break;
+                case 93:
+                    //lv_example_menu_5();
+                    lv_example_keyboard_1();
+                    break;
+                case 94:
+                    lv_example_roller_3();
+                    break;
+                case 95:
+                    lv_example_anim_timeline_1();
+                    break;
+                case 96:
+                    //lv_demo_keypad_encoder();
+                    lv_example_meter_1();
+                    break;
+                case 97:
+                    //lv_demo_music();
+                    lv_example_meter_2();
+                    break;
+                case 98:
+                    //lv_example_tileview_1();
+                    lv_example_anim_2();
+                    break;
+                case 99:
+                    //lv_example_animimg_1();
+                    lv_example_meter_3();
+                    break;
                 default:
                     break;
                 }
             }
         }
-    }*/
+    }//*/
 
     //lv_win32_window_context_t* context = (lv_win32_window_context_t*)(
     //    lv_win32_get_window_context(g_display_window_handles[1]));
@@ -294,7 +384,7 @@ int main()
     // my Win32 filesystem driver application
     // ----------------------------------
 
-    /*::lv_fs_win32_init();
+    //*::lv_fs_win32_init();
 
     lv_fs_dir_t d;
     if (lv_fs_dir_open(&d, "/") == LV_FS_RES_OK)
@@ -307,7 +397,7 @@ int main()
         }
 
         lv_fs_dir_close(&d);
-    }*/
+    }//*/
 
     // ----------------------------------
     // Demos from lv_examples
