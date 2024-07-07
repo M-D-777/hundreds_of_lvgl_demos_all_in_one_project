@@ -699,13 +699,18 @@
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
     <ClInclude Include="lv_drv_conf.h" />
+    <ClInclude Include="genshin\genshin.h">
+      <Filter>genshin</Filter>
+    </ClInclude>
+    <ClInclude Include="clock\clock.h">
+      <Filter>clock</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LVGL.Simulator.manifest" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mile.Project.Properties.h" />
-    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha16.c">
@@ -2050,6 +2055,66 @@
       <Filter>lv_drivers</Filter>
     </ClCompile>
     <ClCompile Include="LVGL.Simulator.cpp" />
+    <ClCompile Include="genshin\genshin.c">
+      <Filter>genshin</Filter>
+    </ClCompile>
+    <ClCompile Include="genshin\genshin_320.c">
+      <Filter>genshin</Filter>
+    </ClCompile>
+    <ClCompile Include="genshin\jindu_420.c">
+      <Filter>genshin</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_arc_mask.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_daytime.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_hand_h.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_hand_m.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_hand_s.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_horoscope03.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_horoscope04.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_horoscope05.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_horoscope06.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_moonrise.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_star_bg.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_star_bg_98.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_star_mask.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_star_mask_liyue.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_sunrise.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\img_sunset.c">
+      <Filter>clock</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LVGL.Simulator.rc" />
@@ -6944,6 +7009,12 @@
     </Filter>
     <Filter Include="lv_drivers\win32drv">
       <UniqueIdentifier>{46dd1f5b-c62e-4ac6-98e3-a5ae1ef6ce82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="clock">
+      <UniqueIdentifier>{cae57b3c-1e5e-4103-be8c-65e8596c744e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="genshin">
+      <UniqueIdentifier>{0c28e385-27a3-4763-8480-b9d6253e315e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

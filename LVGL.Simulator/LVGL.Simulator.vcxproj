@@ -260,6 +260,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)lv_drivers\wayland\wayland.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)lv_drivers\win32drv\win32drv.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)lv_drivers\win_drv.h" />
+    <ClInclude Include="clock\clock.h" />
+    <ClInclude Include="genshin\genshin.h" />
     <ClInclude Include="lv_conf.h" />
   </ItemGroup>
   <ItemGroup>
@@ -270,7 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mile.Project.Properties.h" />
-    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha16.c" />
@@ -720,6 +721,26 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)lv_drivers\wayland\wayland.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)lv_drivers\win32drv\win32drv.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)lv_drivers\win_drv.c" />
+    <ClCompile Include="clock\clock.c" />
+    <ClCompile Include="clock\img_arc_mask.c" />
+    <ClCompile Include="clock\img_daytime.c" />
+    <ClCompile Include="clock\img_hand_h.c" />
+    <ClCompile Include="clock\img_hand_m.c" />
+    <ClCompile Include="clock\img_hand_s.c" />
+    <ClCompile Include="clock\img_horoscope03.c" />
+    <ClCompile Include="clock\img_horoscope04.c" />
+    <ClCompile Include="clock\img_horoscope05.c" />
+    <ClCompile Include="clock\img_horoscope06.c" />
+    <ClCompile Include="clock\img_moonrise.c" />
+    <ClCompile Include="clock\img_star_bg.c" />
+    <ClCompile Include="clock\img_star_bg_98.c" />
+    <ClCompile Include="clock\img_star_mask.c" />
+    <ClCompile Include="clock\img_star_mask_liyue.c" />
+    <ClCompile Include="clock\img_sunrise.c" />
+    <ClCompile Include="clock\img_sunset.c" />
+    <ClCompile Include="genshin\genshin.c" />
+    <ClCompile Include="genshin\genshin_320.c" />
+    <ClCompile Include="genshin\jindu_420.c" />
     <ClCompile Include="LVGL.Simulator.cpp" />
   </ItemGroup>
   <ItemGroup>

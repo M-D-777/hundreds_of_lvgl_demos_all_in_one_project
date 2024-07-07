@@ -26,6 +26,9 @@
 #include "lvgl/demos/lv_demos.h"
 #include "lv_drivers/win32drv/win32drv.h"
 
+#include "genshin/genshin.h"
+#include "clock/clock.h"
+
 #if _MSC_VER >= 1200
 // Restore compilation warnings.
 #pragma warning(pop)
@@ -164,13 +167,13 @@ bool multiple_display_mode_initialization()
 int main()
 {
     lv_init();
-    /*
+    //*
     if (!single_display_mode_initialization())
     {
         return -1;
     }
     //*/
-    //*
+    /*
     if (!multiple_display_mode_initialization())
     {
         return -1;
@@ -186,7 +189,6 @@ int main()
                 lv_disp_set_default(context->display_device_object);
                 switch (i)
                 {
-                    /*
                 case 0:
                     lv_demo_widgets();
                     break;
@@ -235,8 +237,8 @@ int main()
                 case 15:
                     lv_example_style_7();
                     break;
-                */
- /*               case 16:
+
+                case 16:
                     lv_example_style_7();
                     break;
                 case 17:
@@ -287,7 +289,6 @@ int main()
                 case 32:
                     lv_example_style_7();
                     break;
-*/
                 case 90:
                     lv_example_style_1();
                     break;
@@ -403,13 +404,14 @@ int main()
     // Demos from lv_examples
     // ----------------------------------
 
-    lv_demo_widgets();           // ok
+    //lv_demo_widgets();           // ok
     //lv_demo_benchmark();
     // lv_demo_keypad_encoder();    // ok
     // lv_demo_music();             // removed from repository
     // lv_demo_printer();           // removed from repository
     // lv_demo_stress();            // ok
-
+    // clock_init();
+    genshin_start();
     // ----------------------------------
     // LVGL examples
     // ----------------------------------
